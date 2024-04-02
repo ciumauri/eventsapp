@@ -28,7 +28,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="#ddd"
         android:orientation="vertical"
         android:padding="10dp"
@@ -70,7 +70,7 @@
                 android:id="@+id/editText"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:width="250sp"
+                android:width="220sp"
                 />
 
             <Button
@@ -86,7 +86,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tamanho"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="25sp"
             android:textSize="@dimen/sizeTitle"/>
 
         <LinearLayout
@@ -96,7 +96,7 @@
 
             <SeekBar
                 android:id="@+id/skbTextSize"
-                android:layout_width="320dp"
+                android:layout_width="320sp"
                 android:layout_height="wrap_content"
                 android:max="80"
 
@@ -106,7 +106,6 @@
                 android:id="@+id/showSkbTextSize"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:textSize="18sp"/>
 
 
@@ -159,7 +158,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/sizeTitle"
-                android:text="@string/texto4"
+                android:text="@string/cor"
                 android:layout_marginBottom="@dimen/sizeTitle"/>
 
             <LinearLayout
@@ -178,22 +177,22 @@
                     android:gravity="center_horizontal">
 
                     <RadioButton
-                        android:id="@+id/rdbMVermelho"
-                        android:layout_width="0dp"
+                        android:id="@+id/rdbVermelho"
+                        android:layout_width="0sp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/vermelho" />
 
                     <RadioButton
                         android:id="@+id/rdbVerde"
-                        android:layout_width="0dp"
+                        android:layout_width="0sp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/verde" />
 
                     <RadioButton
                         android:id="@+id/rdbAzul"
-                        android:layout_width="0dp"
+                        android:layout_width="0sp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/azul" />
