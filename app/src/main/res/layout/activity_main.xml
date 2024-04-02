@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:title="Teste de Estilos"
+            app:titleTextColor="@color/white"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ddd"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24sp"
+                android:layout_marginRight="24sp"
+                android:layout_marginTop="30sp"
+                android:width="390sp"
+                android:height="120sp"
+                android:background="#fff"
+                android:baselineAligned="false"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margemTitle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/texto"
+                android:textSize="@dimen/sizeTitle"/>
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:width="250sp"
+                />
+
+            <Button
+                android:id="@+id/buttonShowText"
+                android:layout_width="wrap_content"
+                android:text="@string/enviar"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tamanho"
+            android:layout_marginTop="25dp"
+            android:textSize="@dimen/sizeTitle"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margemTitle">
+
+            <SeekBar
+                android:id="@+id/skbTextSize"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:max="80"
+
+                />
+
+            <TextView
+                android:id="@+id/showSkbTextSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textSize="18sp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margemTitle"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sizeTitle"
+                android:text="@string/estilo"
+                android:layout_marginBottom="@dimen/margemTitle"
+                />
+
+            <CheckBox
+                android:id="@+id/chkNegrito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/negrito"
+                android:layout_marginLeft="@dimen/margemLabel"/>
+
+            <CheckBox
+                android:id="@+id/chkItalico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/italico"
+                android:layout_marginLeft="@dimen/margemLabel"/>
+
+            <CheckBox
+                android:id="@+id/chkMaiuscula"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/maiuscula"
+                android:layout_marginLeft="@dimen/margemLabel"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sizeTitle"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sizeTitle"
+                android:text="@string/texto4"
+                android:layout_marginBottom="@dimen/sizeTitle"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                >
+                <RadioGroup
+                    android:id="@+id/rdgCor"
+                    android:layout_marginLeft="@dimen/margemLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdbMVermelho"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/vermelho" />
+
+                    <RadioButton
+                        android:id="@+id/rdbVerde"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/verde" />
+
+                    <RadioButton
+                        android:id="@+id/rdbAzul"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/azul" />
+
+
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
